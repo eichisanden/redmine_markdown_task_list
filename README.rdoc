@@ -1,3 +1,0 @@
-= redmine_markdown_task_list
-
-Description goes here
