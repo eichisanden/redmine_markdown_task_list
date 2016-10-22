@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/eichisanden/redmine_markdown_task_list/badges/gpa.svg)](https://codeclimate.com/github/eichisanden/redmine_markdown_task_list)
+[![Issue Count](https://codeclimate.com/github/eichisanden/redmine_markdown_task_list/badges/issue_count.svg)](https://codeclimate.com/github/eichisanden/redmine_markdown_task_list)
+
 Redmine Markdown Task List Plugin
 ==================================================
 
