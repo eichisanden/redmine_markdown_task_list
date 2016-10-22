@@ -27,3 +27,7 @@ Usage
 
 ![image.png](image.png)
 
+Compatible
+------------------------
+Redmine 3.0.0 or higher
+

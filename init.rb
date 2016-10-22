@@ -3,10 +3,11 @@ require 'markdown_task_list_plugin'
 Redmine::Plugin.register :redmine_markdown_task_list do
   name 'Redmine Markdown Task List plugin'
   author 'eichisanden'
-  description 'Enable Markdown task list.'
-  version '0.0.1'
+  description 'This plugin add task list to Markdown wiki formatting.'
+  version '1.0.0'
   url 'https://github.com/eichisanden/redmine_markdown_task_list'
   author_url 'https://github.com/eichisanden/redmine_markdown_task_list'
+  requires_redmine :version_or_higher => '3.0.0'
 end
 
 Rails.configuration.to_prepare do
