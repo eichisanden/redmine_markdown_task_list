@@ -11,10 +11,10 @@ module MarkdownTaskListPlugin
     module InstanceMethods
       def to_html_with_task_list
         html = to_html_without_task_list
-        html = html.gsub(/\[[xX]\]/) do |match|
+        html = html.gsub(/\[[xX]\]/) do
           %(<input type="checkbox" checked disabled>)
         end
-        html = html.gsub(/\[ \]/) do |match|
+        html.gsub(/\[ \]/) do
           %(<input type="checkbox" disabled>)
         end
       end
