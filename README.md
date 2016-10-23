@@ -4,7 +4,7 @@
 Redmine Markdown Task List Plugin
 ==================================================
 
-This plugin realizes Github Flavored Markdown style Task List.
+This plugin realizes Github Flavored Markdown style Task List.  
 Replace `[x]` and `[ ]` with checkbox tag in markdown text.
 
 Installation
