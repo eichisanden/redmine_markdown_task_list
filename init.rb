@@ -13,7 +13,6 @@ end
 Rails.configuration.to_prepare do
   Redmine::WikiFormatting.format_names.each do |format_name|
     formatter = Redmine::WikiFormatting.formatter_for(format_name)
-puts format_name
     if format_name == "markdown" then
       formatter.send(:include, MarkdownTaskListPlugin::Patch) unless formatter.included_modules.include? MarkdownTaskListPlugin::Patch
     end
