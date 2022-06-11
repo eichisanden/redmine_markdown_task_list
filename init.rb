@@ -1,4 +1,4 @@
-require 'markdown_task_list_plugin'
+require File.dirname(__FILE__) + '/lib/markdown_task_list_plugin'
 
 Redmine::Plugin.register :redmine_markdown_task_list do
   name 'Redmine Markdown Task List plugin'
@@ -19,3 +19,12 @@ Rails.configuration.to_prepare do
   end
 end
 
+# for Redmine 5
+Rails.application.config.after_initialize do
+  Redmine::WikiFormatting.format_names.each do |format_name|
+    formatter = Redmine::WikiFormatting.formatter_for(format_name)
+    if format_name == "markdown" then
+      formatter.prepend(MarkdownTaskListPlugin::ToHtmlWithTaskList)
+    end
+  end
+end
