@@ -4,9 +4,9 @@ Redmine::Plugin.register :redmine_markdown_task_list do
   name 'Redmine Markdown Task List plugin'
   author 'eichisanden'
   description 'This plugin adds Task List to Markdown wiki formatting.'
-  version '1.0.2'
+  version '1.0.3'
   url 'https://github.com/eichisanden/redmine_markdown_task_list'
-  author_url 'https://github.com/eichisanden/redmine_markdown_task_list'
+  author_url 'https://github.com/eichisanden'
   requires_redmine :version_or_higher => '3.0.0'
 end
 
