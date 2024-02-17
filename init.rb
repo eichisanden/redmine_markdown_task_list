@@ -12,8 +12,8 @@ end
 
 Rails.application.config.after_initialize do
   Redmine::WikiFormatting.format_names.each do |format_name|
-    formatter = Redmine::WikiFormatting.formatter_for(format_name)
-    if format_name == "markdown" then
+    if format_name == "markdown" || format_name == "common_mark" then
+      formatter = Redmine::WikiFormatting.formatter_for(format_name)
       formatter.prepend(MarkdownTaskListPlugin::ToHtmlWithTaskList)
     end
   end
